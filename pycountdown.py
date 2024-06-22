@@ -92,7 +92,7 @@ def countdown():
             countdown_string = ""
             if days != 0:
                 countdown_string += f"{pluralize('day', days)}, "
-            countdown_string = f"{pluralize('hour', hours)}, {pluralize('minute', minutes)}, {pluralize('second', seconds)}"
+            countdown_string += f"{pluralize('hour', hours)}, {pluralize('minute', minutes)}, {pluralize('second', seconds)}"
             countdown_stringvar.set(countdown_string)
             time.sleep(1)
         except:
